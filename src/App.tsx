@@ -1,0 +1,41 @@
+import { useEffect } from "react";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { Index } from "./pages/Index";
+import { Collections } from "./pages/Collections";
+import { Giveaway } from "./pages/Giveaway";
+import { HomeButton } from "./components/HomeButton";
+import { GiveawayCard } from "./components/GiveawayCard";
+import { ScrollToTopButton } from "./components/ScrollToTopButton";
+
+function ScrollToTop() {
+  const { pathname, hash } = useLocation();
+
+  useEffect(() => {
+    if (hash) {
+      const el = document.querySelector(hash);
+      if (el) {
+        el.scrollIntoView();
+        return;
+      }
+    }
+    window.scrollTo(0, 0);
+  }, [pathname, hash]);
+
+  return null;
+}
+
+export function App() {
+  return (
+    <BrowserRouter>
+      <ScrollToTop />
+      <HomeButton />
+      <ScrollToTopButton />
+      <GiveawayCard />
+      <Routes>
+        <Route path="/" element={<Index />} />
+        <Route path="/collections" element={<Collections />} />
+        <Route path="/giveaway" element={<Giveaway />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
