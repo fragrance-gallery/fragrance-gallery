@@ -181,6 +181,9 @@ export function Giveaway() {
             <h2 className="mt-3 text-center font-anek text-2xl font-bold uppercase tracking-[0.16em] text-[#7A5E2E] sm:text-lg">
               Prize 1–5
             </h2>
+            <h2 className="mt-3 text-center font-anek text-lg font-semibold uppercase tracking-[0.16em] text-[#7A5E2E] sm:text-lg">
+             10 cent plot for each first five winners
+            </h2>
           </article>
 
           <div className="grid grid-cols-2 gap-x-4 gap-y-10 sm:gap-x-20 sm:gap-y-30 lg:grid-cols-3">
