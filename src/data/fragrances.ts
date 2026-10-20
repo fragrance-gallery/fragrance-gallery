@@ -92,6 +92,6 @@ export const FRAGRANCES: Fragrance[] = [
     prices: {
       "100ml": 1000,
     },
-    image: "https://res.cloudinary.com/mpfeep2s/image/upload/v1792403551/SUNSET_CRUSH.png",
+    image: "https://res.cloudinary.com/mpfeep2s/image/upload/v1792482742/SUNSET_CRUSH.png",
   },
 ];
