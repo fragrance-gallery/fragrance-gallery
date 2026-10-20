@@ -5,22 +5,8 @@ import { Footer } from "./Footer";
 import { GIVEAWAY, GIVEAWAY_DEADLINE_ISO } from "@/data/giveaway";
 import { useCountdown } from "@/lib/useCountdown";
 import { buildWhatsAppMessageUrl } from "@/lib/whatsapp";
-import prize1to5 from "@/assets/1-5_.png";
-import prize6 from "@/assets/6.png";
-import prize7 from "@/assets/7.png";
-import prize8 from "@/assets/8.png";
-import prize9 from "@/assets/9.png";
-import prize10 from "@/assets/10.png";
-import prize11 from "@/assets/11.png";
-import prize12 from "@/assets/12.png";
-import prize13 from "@/assets/13.png";
-import prize14 from "@/assets/14.png";
-import prize15 from "@/assets/15.png";
-import prize16 from "@/assets/16.png";
-import prize17 from "@/assets/17.png";
-import prize18 from "@/assets/18.png";
-import prize19 from "@/assets/19.png";
-import prize20 from "@/assets/20.png";
+
+import { useSeo } from "@/lib/seo";
 
 const pad = (value: number) => String(value).padStart(2, "0");
 const prizes: {
@@ -123,11 +109,22 @@ function Section({
 }
 
 export function Giveaway() {
+
+    useSeo({
+    title: "Giveaway — Fragrance Gallery",
+    description:
+      "Enter the Fragrance Gallery perfume giveaway for a chance to win a signature flacon. See how to enter, eligibility and the closing date.",
+    path: "/giveaway",
+    noindex: true,
+  });
+  
   const countdown = useCountdown(GIVEAWAY_DEADLINE_ISO);
 
   return (
     <div className="min-h-screen bg-background font-sans text-foreground">
       <SiteHeader />
+
+       <h1 className="sr-only">Fragrance Gallery Perfume Giveaway</h1>
 
       <section className="relative bg-[#F7F2E9] px-6 py-8 sm:py-10 lg:px-16 lg:py-12">
         <div className="mx-auto max-w-5xl">
