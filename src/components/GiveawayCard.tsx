@@ -7,7 +7,7 @@ import { useCountdown } from "@/lib/useCountdown";
 const REVEAL_DELAY_MS = 2500;
 
 const prize =
-  "https://res.cloudinary.com/mpfeep2s/image/upload/v1792406126/Fragrance-Giveaway.jpg.jpg";
+  "https://res.cloudinary.com/mpfeep2s/image/upload/v1792486290/Fragrance_Giveaway.jpg.jpg";
 
 const pad = (value: number) => String(value).padStart(2, "0");
 
