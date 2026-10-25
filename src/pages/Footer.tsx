@@ -6,24 +6,34 @@ const googleMapsSearchUrl = "https://maps.app.goo.gl/Lm2VLpK67UnzfMxP8";
 
 export function Footer() {
   return (
-    <footer id="contact" className="w-full">
+    <footer
+      id="contact"
+      className="relative w-full overflow-hidden border-t border-[#E0D7C8] bg-[#F7F2E9]"
+    >
+      <div aria-hidden="true" className="pointer-events-none absolute inset-0">
+        <span className="footer-glow footer-glow-a" />
+        <span className="footer-glow footer-glow-b" />
+        <span className="footer-glow footer-glow-c" />
+        <span className="footer-glow footer-glow-d" />
+        <span className="footer-shimmer" />
+      </div>
       {/* Main Footer Links & Newsletter */}
-      <div className="bg-background">
+      <div className="relative">
         <div className="mx-auto max-w-7xl px-6 py-16 sm:px-10 lg:px-16 lg:py-20">
           <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-12 lg:gap-10">
             {/* WhatsApp CTA & Brand column */}
             <div className="sm:col-span-1 lg:col-span-7">
-              <h3 className="font-display text-2xl font-normal text-foreground sm:text-3xl">
+              <h3 className="font-display text-2xl font-normal text-[#141311] sm:text-3xl">
                 Let’s find your signature scent.
               </h3>
-              <p className="mt-3 max-w-md text-sm font-light leading-relaxed text-muted-foreground">
+              <p className="mt-3 max-w-md text-sm font-light leading-relaxed text-[#4A453F]">
                 Questions about our fragrances? Message us on WhatsApp and we’ll be happy to help.
               </p>
               <a
                 href={buildWhatsAppMessageUrl("Hi, I'd like to know more about your fragrances.")}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-7 inline-flex items-center gap-2 bg-[#141311] px-6 py-3 text-xs font-medium uppercase tracking-[0.18em] text-[#FAF8F5] transition hover:bg-[#2D2A26]"
+                className="mt-7 inline-flex items-center gap-2 bg-[#141311] px-6 py-3 text-xs font-medium uppercase tracking-[0.18em] text-[#FAF8F5] transition hover:bg-gold hover:text-[#141311]"
               >
                 <MessageCircle className="h-4 w-4" />
                 Chat on WhatsApp
@@ -34,7 +44,7 @@ export function Footer() {
                 <a
                   href="https://www.instagram.com/__fragrancegallery.in"
                   aria-label="Instagram"
-                  className="flex h-12 w-12 items-center justify-center rounded-full border border-foreground/15 text-muted-foreground transition-colors hover:border-gold hover:text-gold"
+                  className="flex h-12 w-12 items-center justify-center rounded-full border border-[#141311]/15 text-[#4A453F] transition-colors hover:border-gold hover:text-gold"
                 >
                   <svg
                     className="h-6 w-6"
@@ -53,7 +63,7 @@ export function Footer() {
                 <a
                   href="https://www.facebook.com/share/1CQBqee16p/?mibextid=wwXIfr"
                   aria-label="Facebook"
-                  className="flex h-12 w-12 items-center justify-center rounded-full border border-foreground/15 text-muted-foreground transition-colors hover:border-gold hover:text-gold"
+                  className="flex h-12 w-12 items-center justify-center rounded-full border border-[#141311]/15 text-[#4A453F] transition-colors hover:border-gold hover:text-gold"
                 >
                   <svg
                     className="h-6 w-6"
@@ -70,7 +80,7 @@ export function Footer() {
                 <a
                   href="https://www.youtube.com/@fragranceGALLERY-m2n"
                   aria-label="YouTube"
-                  className="flex h-12 w-12 items-center justify-center rounded-full border border-foreground/15 text-muted-foreground transition-colors hover:border-gold hover:text-gold"
+                  className="flex h-12 w-12 items-center justify-center rounded-full border border-[#141311]/15 text-[#4A453F] transition-colors hover:border-gold hover:text-gold"
                 >
                   <svg
                     className="h-6 w-6"
@@ -90,11 +100,11 @@ export function Footer() {
             </div>
             {/* Temporary Location Map */}
             <div className="sm:col-span-1 lg:col-span-5">
-              <h3 className="font-display text-2xl font-normal text-foreground sm:text-3xl">
+              <h3 className="font-display text-2xl font-normal text-[#141311] sm:text-3xl">
                 Visit us
               </h3>
-              <p className="mt-3 flex items-start gap-2 text-sm font-light leading-relaxed text-muted-foreground">
-                <MapPin className="mt-0.5 h-4 w-4 shrink-0" />
+              <p className="mt-3 flex items-start gap-2 text-sm font-light leading-relaxed text-[#4A453F]">
+                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
                 <span>{TEMPORARY_ADDRESS} </span>
               </p>
               <a
@@ -102,7 +112,7 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={`Open temporary address in Google Maps: ${TEMPORARY_ADDRESS}`}
-                className="group relative mt-5 block h-44 overflow-hidden border border-[#E9E3D8] bg-[#F2EDE4]"
+                className="group relative mt-5 block h-44 overflow-hidden border border-[#E0D7C8] bg-[#F2EDE4]"
               >
                 <iframe
                   title={`Map preview for ${TEMPORARY_ADDRESS}`}
@@ -119,8 +129,8 @@ export function Footer() {
             </div>
           </div>
           {/* Bottom Bar Divider & Copyright */}
-          <div className="mt-16 border-t border-foreground/10 pt-8">
-            <div className="flex flex-col items-start justify-between gap-4 text-xs font-light text-muted-foreground sm:flex-row sm:items-center">
+          <div className="mt-16 border-t border-[#E0D7C8] pt-8">
+            <div className="flex flex-col items-start justify-between gap-4 text-xs font-light text-[#4A453F] sm:flex-row sm:items-center">
               <p>© FRAGRANCE GALLERY. All rights reserved.</p>
              
             </div>
