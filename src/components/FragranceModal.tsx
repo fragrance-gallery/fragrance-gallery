@@ -84,20 +84,24 @@ export function FragranceModal({ fragrance, onClose }: FragranceModalProps) {
               {fragrance.name}
             </h2>
 
-            {/* Olfactory pyramid */}
-            <div className="mt-5 space-y-1.5 rounded-sm border border-[#E6DFD2] bg-[#F2EDE4] p-3.5 text-xs">
-              {[
-                { label: "TOP", value: fragrance.topNotes },
-                { label: "HEART", value: fragrance.heartNotes },
-                { label: "BASE", value: fragrance.baseNotes },
-              ].map((note) => (
-                <p key={note.label}>
-                  <span className="font-semibold uppercase tracking-[0.12em] text-[#7A5E2E]">
-                    {note.label}:
-                  </span>{" "}
-                  <span className="font-light text-[#2F2C28]">{note.value}</span>
+            {/* Description & character */}
+            <div className="mt-5 space-y-3 rounded-sm border border-[#E6DFD2] bg-[#F2EDE4] p-3.5 text-xs">
+              <div>
+                <h3 className="font-semibold uppercase tracking-[0.12em] text-[#7A5E2E]">
+                  Description
+                </h3>
+                <p className="mt-1 font-light leading-relaxed text-[#2F2C28]">
+                  {fragrance.description}
                 </p>
-              ))}
+              </div>
+              <div>
+                <h3 className="font-semibold uppercase tracking-[0.12em] text-[#7A5E2E]">
+                  Character
+                </h3>
+                <p className="mt-1 font-light leading-relaxed text-[#2F2C28]">
+                  {fragrance.character}
+                </p>
+              </div>
             </div>
 
             {/* CTA Buttons */}

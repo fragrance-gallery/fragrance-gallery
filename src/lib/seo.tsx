@@ -108,6 +108,7 @@ export function buildProductsJsonLd(fragrances: Fragrance[]): Record<string, unk
         "@context": "https://schema.org",
         "@type": "Product",
         name: fragrance.name,
+        description: fragrance.description,
         category: fragrance.category,
         brand: { "@type": "Brand", name: SITE_NAME },
         image: toAbsoluteUrl(fragrance.image),

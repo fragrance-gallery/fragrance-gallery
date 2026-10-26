@@ -27,12 +27,6 @@ export function FragranceCard({ fragrance, onQuickView, availableSizes = SIZES }
 
   const currentPrice = fragrance.prices[selectedSize];
 
-  const notes = [
-    { label: "TOP:", value: fragrance.topNotes },
-    { label: "HEART:", value: fragrance.heartNotes },
-    { label: "BASE:", value: fragrance.baseNotes },
-  ];
-
   const handleWhatsAppOrder = (e: React.MouseEvent) => {
     e.stopPropagation();
     window.open(
@@ -76,16 +70,20 @@ export function FragranceCard({ fragrance, onQuickView, availableSizes = SIZES }
         </h3>
       
 
-        {/* Notes */}
-        <div className="mt-3.5 space-y-1 rounded-xs border border-[#E6DFD2] bg-[#F2EDE4] p-3 text-[11.5px] leading-relaxed">
-          {notes.map(({ label, value }) => (
-            <p key={label} className="truncate">
-              <span className="font-semibold uppercase tracking-[0.12em] text-[#7A5E2E]">
-                {label}
-              </span>{" "}
-              <span className="font-light text-[#2F2C28]">{value}</span>
-            </p>
-          ))}
+        {/* Description & character */}
+        <div className="mt-3.5 space-y-2.5 rounded-xs border border-[#E6DFD2] bg-[#F2EDE4] p-3 text-[11.5px] leading-relaxed">
+          <div>
+            <h4 className="font-semibold uppercase tracking-[0.12em] text-[#7A5E2E]">
+              Description
+            </h4>
+            <p className="mt-1 font-light text-[#2F2C28]">{fragrance.description}</p>
+          </div>
+          <div>
+            <h4 className="font-semibold uppercase tracking-[0.12em] text-[#7A5E2E]">
+              Character
+            </h4>
+            <p className="mt-1 font-light text-[#2F2C28]">{fragrance.character}</p>
+          </div>
         </div>
 
         {/* Size & price */}

@@ -8,9 +8,8 @@ export interface Fragrance {
   category: string;
   rating: number;
   reviewsCount: string;
-  topNotes: string;
-  heartNotes: string;
-  baseNotes: string;
+  description: string;
+  character: string;
   prices: Record<BottleSize, number>;
   image: string;
 }
@@ -22,9 +21,9 @@ export const FRAGRANCES: Fragrance[] = [
     category: "Enso Paris",
     rating: 4.9,
     reviewsCount: "1.2k",
-    topNotes: "Rose de Mai, Italian Bergamot",
-    heartNotes: "Wild Peony, Damascena Essence",
-    baseNotes: "White Musk, Florentine Orris",
+    description:
+      "A warm, rich and captivating fragrance created for those who appreciate elegance and luxury. Its sophisticated character makes it suitable for evening wear, special occasions and memorable moments.",
+    character: "Warm, rich, luxurious",
     prices: {
       "100ml": 1000,
     },
@@ -36,9 +35,9 @@ export const FRAGRANCES: Fragrance[] = [
     category: "Enso Paris",
     rating: 4.8,
     reviewsCount: "940",
-    topNotes: "Black Truffle, Ylang Ylang, Golden Mandarin",
-    heartNotes: "Rare Black Orchid, Spiced Plum, Lotus Wood",
-    baseNotes: "Warm Amber, Patchouli, Vanilla Absolute",
+    description:
+      "A fresh, modern and confident fragrance concept designed for everyday sophistication. Its clean and versatile character complements both casual outfits and formal occasions.",
+    character: "Fresh, bold, timeless",
     prices: {
       "100ml": 1000,
     },
@@ -50,9 +49,9 @@ export const FRAGRANCES: Fragrance[] = [
     category: "Enso Paris",
     rating: 4.9,
     reviewsCount: "810",
-    topNotes: "Crushed Eucalyptus, White Rose, Green Fig",
-    heartNotes: "Dewy Violet, Clary Sage, Juniper Berry",
-    baseNotes: "Virginia Cedar, Smoked Vetiver, Oakmoss",
+    description:
+      "A bold and sophisticated fragrance concept for those who want to express confidence and style. Ideal for evening occasions, celebrations and a distinctive personal presence.",
+    character: "Bold, sophisticated, confident",
     prices: {
       "100ml": 1000,
     },
@@ -64,9 +63,9 @@ export const FRAGRANCES: Fragrance[] = [
     category: "Enso Paris",
     rating: 5.0,
     reviewsCount: "620",
-    topNotes: "White Pepper, Fig Nectar, Cardamom",
-    heartNotes: "Florentine Orris, Violet Leaf, Papyrus",
-    baseNotes: "Mysore Sandalwood, Cashmere Wood, Warm Amber",
+    description:
+      "A distinctive and captivating fragrance for those who appreciate an elegant, memorable scent. Suitable for daily wear, social occasions and special evenings.",
+    character: "Exotic, distinctive and elegant.",
     prices: {
       "100ml": 1000,
     },
@@ -78,9 +77,9 @@ export const FRAGRANCES: Fragrance[] = [
     category: "Enso Paris",
     rating: 4.9,
     reviewsCount: "1.5k",
-    topNotes: "Night Jasmine, Star Anise, Bitter Orange",
-    heartNotes: "Tuberose, Black Vanilla, Damascus Plum",
-    baseNotes: "Golden Benzoin, Tonka Bean, Sandalwood",
+    description:
+      "A modern, stylish fragrance inspired by the warmth and beauty of sunset. Designed for people who enjoy a refined scent for everyday use and special occasions.",
+    character: "Modern, warm and sophisticated.",
     prices: {
       "100ml": 1000,
     },
