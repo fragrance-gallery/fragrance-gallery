@@ -5,7 +5,7 @@ import type { Fragrance } from "@/data/fragrances";
 // The same origin is also hard-coded in index.html, public/robots.txt and
 // public/sitemap.xml (static files that cannot import this module) — keep them in sync.
 export const SITE_URL = "https://fragrancegallary.com";
-export const SITE_NAME = "Fragrance Gallery";
+export const SITE_NAME = "Fragrance Gallary";
 
 function setMeta(attr: "name" | "property", key: string, content: string) {
   let el = document.head.querySelector<HTMLMetaElement>(`meta[${attr}="${key}"]`);

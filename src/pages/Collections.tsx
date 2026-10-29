@@ -8,14 +8,14 @@ import { useSeo, JsonLd, buildProductsJsonLd } from "@/lib/seo";
 const PRODUCTS_JSON_LD = buildProductsJsonLd(FRAGRANCES);
 
 export function Collections() {
-   useSeo({
-    title: "The Scent Collection — Fragrance Gallery",
+  useSeo({
+    title: "The Scent Collection — Fragrance Gallary",
     description:
-      "Browse the Fragrance Gallery scent collection of artisanal perfumes. Explore floral, woody, oriental and citrus compositions with notes, ratings and pricing.",
+      "Browse the Fragrance Gallary scent collection of artisanal perfumes. Explore floral, woody, oriental and citrus compositions with notes, ratings and pricing.",
     path: "/collections",
     image: FRAGRANCES[0]?.image,
   });
-  
+
   return (
     <div className="min-h-screen bg-background font-sans text-foreground">
       <SiteHeader />
@@ -39,7 +39,7 @@ export function Collections() {
             <div className="max-w-2xl">
               <p className="flex items-center gap-2 text-xs font-medium uppercase tracking-[0.28em] text-gold">
                 <Sparkles className="h-3.5 w-3.5" />
-                Fragrance Gallery
+                Fragrance Gallary
               </p>
               <h1 className="mt-2 font-display text-3xl font-normal tracking-tight text-[#1A1816] sm:text-4xl lg:text-5xl">
                 The Scent Collection
@@ -53,7 +53,7 @@ export function Collections() {
         </div>
       </section>
 
-      {/* Fragrance Gallery */}
+      {/* Fragrance Gallary */}
       <main className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-16 lg:py-12">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {FRAGRANCES.map((fragrance) => (
@@ -61,12 +61,9 @@ export function Collections() {
           ))}
         </div>
       </main>
- <JsonLd data={PRODUCTS_JSON_LD} />
+      <JsonLd data={PRODUCTS_JSON_LD} />
     </div>
-    
   );
 }
 
 export default Collections;
-
-

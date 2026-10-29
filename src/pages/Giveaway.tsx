@@ -17,13 +17,42 @@ const prizes: {
   cardClass?: string;
   imgClass?: string;
 }[] = [
-  { number: 6, string: "TVS Jupiter (110cc)", image: "https://res.cloudinary.com/mpfeep2s/image/upload/v1792405817/6.png" },
-  { number: 7, string: "IPhone 16", image: "https://res.cloudinary.com/mpfeep2s/image/upload/v1792405818/7.png" },
-  { number: 8, string: "HP Laptop", image: "https://res.cloudinary.com/mpfeep2s/image/upload/v1792405818/8.png" },
-  { number: 9, string: "Gold Coin 2g", image: "https://res.cloudinary.com/mpfeep2s/image/upload/v1792405819/9.png" },
-  { number: 10, string: "Gold Coin 2g", image: "https://res.cloudinary.com/mpfeep2s/image/upload/v1792405820/10.png" },
-  { number: 11, string: "Godrej AC (1 Tone 3 Star)", image: "https://res.cloudinary.com/mpfeep2s/image/upload/v1792405821/11.png" },
-  { number: 12, string: "LG Double Door Fridge", image: "https://res.cloudinary.com/mpfeep2s/image/upload/v1792405822/12.png", size: "h-80 sm:h-96" },
+  {
+    number: 6,
+    string: "TVS Jupiter (110cc)",
+    image: "https://res.cloudinary.com/mpfeep2s/image/upload/v1792405817/6.png",
+  },
+  {
+    number: 7,
+    string: "IPhone 16",
+    image: "https://res.cloudinary.com/mpfeep2s/image/upload/v1792405818/7.png",
+  },
+  {
+    number: 8,
+    string: "HP Laptop",
+    image: "https://res.cloudinary.com/mpfeep2s/image/upload/v1792405818/8.png",
+  },
+  {
+    number: 9,
+    string: "Gold Coin 2g",
+    image: "https://res.cloudinary.com/mpfeep2s/image/upload/v1792405819/9.png",
+  },
+  {
+    number: 10,
+    string: "Gold Coin 2g",
+    image: "https://res.cloudinary.com/mpfeep2s/image/upload/v1792405820/10.png",
+  },
+  {
+    number: 11,
+    string: "Godrej AC (1 Tone 3 Star)",
+    image: "https://res.cloudinary.com/mpfeep2s/image/upload/v1792405821/11.png",
+  },
+  {
+    number: 12,
+    string: "LG Double Door Fridge",
+    image: "https://res.cloudinary.com/mpfeep2s/image/upload/v1792405822/12.png",
+    size: "h-80 sm:h-96",
+  },
   {
     number: 13,
     string: "Samsung Galaxy Tab",
@@ -39,7 +68,12 @@ const prizes: {
     cardClass: "flex flex-col justify-end lg:self-stretch",
     imgClass: "lg:flex-1",
   },
-  { number: 15, string: "Door Refrigerator Samsung Single", image: "https://res.cloudinary.com/mpfeep2s/image/upload/v1792405826/15.png", size: "h-80 sm:h-96" },
+  {
+    number: 15,
+    string: "Door Refrigerator Samsung Single",
+    image: "https://res.cloudinary.com/mpfeep2s/image/upload/v1792405826/15.png",
+    size: "h-80 sm:h-96",
+  },
   {
     number: 16,
     string: "Android Mobile Phone",
@@ -54,20 +88,24 @@ const prizes: {
     cardClass: "flex flex-col justify-end lg:self-stretch",
     imgClass: "lg:flex-1",
   },
-  { number: 18, string: "Water Purifier", image: "https://res.cloudinary.com/mpfeep2s/image/upload/v1792405830/18.png" },
-  { number: 19, string: "32 inch Smart Led Tv", image: "https://res.cloudinary.com/mpfeep2s/image/upload/v1792405831/19.png" },
-  { number: 20, string: "V-Guard Air Cooler", image: "https://res.cloudinary.com/mpfeep2s/image/upload/v1792405832/20.png" },
+  {
+    number: 18,
+    string: "Water Purifier",
+    image: "https://res.cloudinary.com/mpfeep2s/image/upload/v1792405830/18.png",
+  },
+  {
+    number: 19,
+    string: "32 inch Smart Led Tv",
+    image: "https://res.cloudinary.com/mpfeep2s/image/upload/v1792405831/19.png",
+  },
+  {
+    number: 20,
+    string: "V-Guard Air Cooler",
+    image: "https://res.cloudinary.com/mpfeep2s/image/upload/v1792405832/20.png",
+  },
 ];
 
-function CountdownUnit({
-  value,
-  label,
-  live,
-}: {
-  value: number;
-  label: string;
-  live?: boolean;
-}) {
+function CountdownUnit({ value, label, live }: { value: number; label: string; live?: boolean }) {
   return (
     <div
       className={`flex flex-col items-center rounded-lg border px-2 py-4 ${
@@ -109,22 +147,21 @@ function Section({
 }
 
 export function Giveaway() {
-
-    useSeo({
-    title: "Giveaway — Fragrance Gallery",
+  useSeo({
+    title: "Giveaway — Fragrance Gallary",
     description:
-      "Enter the Fragrance Gallery perfume giveaway for a chance to win a signature flacon. See how to enter, eligibility and the closing date.",
+      "Enter the Fragrance Gallary perfume giveaway for a chance to win a signature flacon. See how to enter, eligibility and the closing date.",
     path: "/giveaway",
     noindex: true,
   });
-  
+
   const countdown = useCountdown(GIVEAWAY_DEADLINE_ISO);
 
   return (
     <div className="min-h-screen bg-background font-sans text-foreground">
       <SiteHeader />
 
-       <h1 className="sr-only">Fragrance Gallery Perfume Giveaway</h1>
+      <h1 className="sr-only">Fragrance Gallary Perfume Giveaway</h1>
 
       <section className="relative bg-[#F7F2E9] px-6 py-8 sm:py-10 lg:px-16 lg:py-12">
         <div className="mx-auto max-w-5xl">
@@ -179,16 +216,13 @@ export function Giveaway() {
               Prize 1–5
             </h2>
             <h2 className="mt-3 text-center font-anek text-lg font-medium uppercase tracking-[0.16em] text-[#7A5E2E] sm:text-lg sm:font-medium">
-             10 cent plot for each first five winners
+              10 cent plot for each first five winners
             </h2>
           </article>
 
           <div className="grid grid-cols-2 gap-x-4 gap-y-10 sm:gap-x-20 sm:gap-y-30 lg:grid-cols-3">
             {prizes.map(({ number, string, image, size, cardClass, imgClass }) => (
-              <article
-                key={number}
-                className={`self-start overflow-hidden ${cardClass ?? ""}`}
-              >
+              <article key={number} className={`self-start overflow-hidden ${cardClass ?? ""}`}>
                 <img
                   src={image}
                   alt={`Giveaway prize ${number}`}

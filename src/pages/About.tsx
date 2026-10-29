@@ -19,7 +19,7 @@ function CountUp({
   className,
 }: {
   value: number;
- suffix?: string | undefined;
+  suffix?: string | undefined;
   duration?: number;
   className?: string;
 }) {
@@ -93,7 +93,7 @@ export function About() {
             </h2>
             <div className="mt-7 space-y-5 text-sm font-light leading-relaxed text-muted-foreground">
               <p>
-                FRAGRANCE GALLERY began at a workbench under a west-facing window, where petals,
+                Fragrance Gallary began at a workbench under a west-facing window, where petals,
                 resins and woods were weighed against the only test that mattered — the nose. The
                 window hasn't changed, and neither has the rule that a formula is finished only when
                 it stops asking questions.

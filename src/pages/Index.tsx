@@ -5,11 +5,7 @@ import { SiteHeader } from "@/components/site-header";
 import { FragranceCard } from "@/components/FragranceCard";
 import { FRAGRANCES } from "@/data/fragrances";
 
-const FEATURED_FRAGRANCE_IDS = [
-  "enso-sunset-crush",
-  "enso-blue-legend-a1",
-  "enso-blue-legend-b2",
-];
+const FEATURED_FRAGRANCE_IDS = ["enso-sunset-crush", "enso-blue-legend-a1", "enso-blue-legend-b2"];
 const FEATURED_FRAGRANCES = FEATURED_FRAGRANCE_IDS.map((id) =>
   FRAGRANCES.find((fragrance) => fragrance.id === id),
 ).filter((fragrance) => fragrance !== undefined);
@@ -30,7 +26,10 @@ const slides = [
       <>
         Find Your Signature
         <br />
-        <em className="text-gold">Leave Your <br />Scent</em>
+        <em className="text-gold">
+          Leave Your <br />
+          Scent
+        </em>
       </>
     ),
     text: "Luxury perfumes crafted to inspire confidence and elegance.",
@@ -43,7 +42,10 @@ const slides = [
       <>
         Sunset Crush
         <br />
-        <em className="text-gold">Warm &amp; <br className="sm:hidden" />Timeless</em>
+        <em className="text-gold">
+          Warm &amp; <br className="sm:hidden" />
+          Timeless
+        </em>
       </>
     ),
     text: "Golden amber and rare orchids wrapped in pure sophistication.",
@@ -66,10 +68,10 @@ const slides = [
 export function Index() {
   const [active, setActive] = useState(0);
 
-    useSeo({
-    title: "Fragrance Gallery — Luxury Perfumes",
+  useSeo({
+    title: "Fragrance Gallary — Luxury Perfumes",
     description:
-      "Discover artisanal luxury perfumes from Fragrance Gallery — floral, woody, oriental and citrus compositions crafted from rare Grasse ingredients.",
+      "Discover artisanal luxury perfumes from Fragrance Gallary — floral, woody, oriental and citrus compositions crafted from rare Grasse ingredients.",
     path: "/",
     image: slides[0]!.image,
   });
@@ -100,7 +102,9 @@ export function Index() {
         <div className="absolute inset-0 bg-gradient-to-r from-background via-background/70 to-background/20 lg:from-background/90 lg:via-background/50 lg:to-transparent" />
         <div className="relative w-full px-6 py-0 sm:py-8 lg:px-16 lg:py-8">
           <p className="text-xs font-medium uppercase tracking-[0.2em] text-gold">{slide.tag}</p>
-          <h1 className="mt-6 min-h-[2.5em] font-display text-4xl leading-tight min-[420px]:text-5xl sm:whitespace-nowrap lg:text-6xl">{slide.title}</h1>
+          <h1 className="mt-6 min-h-[2.5em] font-display text-4xl leading-tight min-[420px]:text-5xl sm:whitespace-nowrap lg:text-6xl">
+            {slide.title}
+          </h1>
           <p className="mt-6 min-h-[3em] max-w-xs text-lg font-light">{slide.text}</p>
           <div className="mt-10 flex flex-wrap gap-4">
             <Link

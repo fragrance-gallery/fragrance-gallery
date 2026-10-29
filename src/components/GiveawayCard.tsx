@@ -47,7 +47,7 @@ export function GiveawayCard() {
 
   return (
     <aside
-      aria-label="Fragrance Gallery giveaway invitation"
+      aria-label="Fragrance Gallary giveaway invitation"
       style={{
         backgroundImage: `linear-gradient(rgba(250, 247, 242, 0.01), rgba(250, 247, 242, 0.75)), url(${prize})`,
       }}

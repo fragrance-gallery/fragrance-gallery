@@ -36,13 +36,13 @@ export interface GiveawayConfig {
 }
 
 export const GIVEAWAY: GiveawayConfig = {
-  brand: "Fragrance Gallery",
+  brand: "Fragrance Gallary",
   eyebrow: "Exclusive Giveaway",
   heading: "A little gift, just for you.",
   shortDescription:
     "Enter our exclusive giveaway for the chance to win a fragrance from our signature collection.",
   pageIntro:
-    "One lucky guest will receive a fragrance from our signature collection, presented in signature Fragrance Gallery style. Entry is free.",
+    "One lucky guest will receive a fragrance from our signature collection, presented in signature Fragrance Gallary style. Entry is free.",
 
   // TODO(business): confirm the actual prize before publishing.
   prizeName: "Prize Plots 1–5",
@@ -54,7 +54,7 @@ export const GIVEAWAY: GiveawayConfig = {
   // TODO(business): confirm the official entry method.
   entryInstructions: [
     "Tap the button above to purchase perfume based on your interest through our WhatsApp concierge.",
-    "The official entry method, and any required details, will be confirmed by Fragrance Gallery.",
+    "The official entry method, and any required details, will be confirmed by Fragrance Gallary.",
   ],
 
   terms: [
@@ -70,5 +70,5 @@ export const GIVEAWAY: GiveawayConfig = {
   entryActionLabel: "Enter the Giveaway",
 
   // TODO(business): confirm the entry message and channel.
-  entryWhatsAppMessage: "Hi Fragrance Gallery, I'd like to enter the giveaway.",
+  entryWhatsAppMessage: "Hi Fragrance Gallary, I'd like to enter the giveaway.",
 };

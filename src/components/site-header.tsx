@@ -59,7 +59,7 @@ export function SiteHeader() {
       <Link to="/" className="flex min-w-0 items-center gap-2 lg:gap-2.5">
         <img
           src={logo}
-          alt="Fragrance Gallery logo"
+          alt="Fragrance Gallary logo"
           className="h-10 w-auto shrink-0 object-contain lg:h-12"
         />
         <span className="min-w-0 text-center leading-none">

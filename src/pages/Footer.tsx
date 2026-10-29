@@ -95,7 +95,6 @@ export function Footer() {
                     <path d="m9.75 15.02 5.72-3.02-5.72-3.02v6.04Z" />
                   </svg>
                 </a>
-
               </div>
             </div>
             {/* Temporary Location Map */}
@@ -131,8 +130,7 @@ export function Footer() {
           {/* Bottom Bar Divider & Copyright */}
           <div className="mt-16 border-t border-[#E0D7C8] pt-8">
             <div className="flex flex-col items-start justify-between gap-4 text-xs font-light text-[#4A453F] sm:flex-row sm:items-center">
-              <p>© FRAGRANCE GALLERY. All rights reserved.</p>
-             
+              <p>© Fragrance Gallary. All rights reserved.</p>
             </div>
           </div>
         </div>
@@ -142,5 +140,3 @@ export function Footer() {
 }
 
 export default Footer;
-
-
