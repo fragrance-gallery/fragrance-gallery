@@ -67,7 +67,7 @@ export function SiteHeader() {
             FRAGRANCE
           </span>
           <span className="block truncate text-[9px] tracking-[0.35em] text-muted-foreground sm:text-[10px] lg:tracking-[0.4em]">
-            GALLERY
+            GALLARY
           </span>
         </span>
       </Link>
